@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Kreditor2G/Kreditor2G.iml" filepath="$PROJECT_DIR$/Kreditor2G/Kreditor2G.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/PBO.iml" filepath="$PROJECT_DIR$/.idea/PBO.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Pertemuan1PBO/Pertemuan1PBO.iml" filepath="$PROJECT_DIR$/Pertemuan1PBO/Pertemuan1PBO.iml" />
+    </modules>
+  </component>
+</project>
