@@ -2,6 +2,7 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
+
         //Membaca input dari parameter
         double hutang = Double.parseDouble(args[0]);
         float bunga = Float.parseFloat(args[1]);
@@ -23,6 +24,7 @@ public class Main {
         System.out.println("Total Bayar: " + totalBayar);
         System.out.println("Angsuran: " + angsuran);
         System.out.println("==========================");
+
         // Tampilkan tabel
         System.out.println("+---------------+--------------+---------------+");
         System.out.println("| Angsurang Ke- | Jumlah Bayar | Sisa Pinjaman |");
