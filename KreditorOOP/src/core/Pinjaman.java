@@ -13,8 +13,21 @@ public class Pinjaman {
         this.daftarAngsuran = new Angsuran[(this.jumlahCicilan)];
     }
 
-    public void hitung() {
+    public void hitung()
+    {
+        double totalPinjaman = this.hutang + (this.hutang * this.bunga / 100);
+        double angsuran = totalPinjaman / this.jumlahCicilan;
 
+
+        for (int i = 0; i < this.jumlahCicilan; i++)
+        {
+            int angsuranKe = (i+1);
+            double jumlahBayar = angsuran;
+            double sisaPinjaman = totalPinjaman - (angsuran * angsuranKe);
+
+            Angsuran a = new Angsuran(angsuranKe, jumlahBayar, sisaPinjaman);
+            this.daftarAngsuran[i] = a;
+        }
     }
 
     public Angsuran[] getDaftarAngsuran() {
