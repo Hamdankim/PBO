@@ -1,4 +1,4 @@
-package PACKAGE_NAME;
-
-public class EntitasTerbang {
+public interface EntitasTerbang
+{
+    void terbang();
 }

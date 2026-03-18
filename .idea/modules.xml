@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/BelajarInterface/BelajarInterface.iml" filepath="$PROJECT_DIR$/BelajarInterface/BelajarInterface.iml" />
       <module fileurl="file://$PROJECT_DIR$/Kreditor2G/Kreditor2G.iml" filepath="$PROJECT_DIR$/Kreditor2G/Kreditor2G.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/PBO.iml" filepath="$PROJECT_DIR$/.idea/PBO.iml" />
       <module fileurl="file://$PROJECT_DIR$/Pertemuan1PBO/Pertemuan1PBO.iml" filepath="$PROJECT_DIR$/Pertemuan1PBO/Pertemuan1PBO.iml" />

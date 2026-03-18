@@ -1,4 +1,16 @@
-package PACKAGE_NAME;
+public class Superman extends Manusia implements EntitasTerbang
+{
+    public Superman(String nama)
+    {
+        super(nama);
+    }
+    @Override
+    public void terbang() {
+        System.out.println(nama + " sedang terbang");
+    }
 
-public class Superman {
+    public void penglihatanLase()
+    {
+        System.out.println(nama + " sedang menggunakan penglihatan laser");
+    }
 }

@@ -1,21 +1,28 @@
-package JenisKegiatan;
+package org.example;
 
-import org.example.Alat;
-
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class TugasKuliah extends Kegiatan {
     private String namaMataKuliah;
     private Date deadlinePengumpulan;
 
-    public TugasKuliah(String judul, Integer prioritas, String namaMataKuliah, String deadlinePengumpulan) {
+    public TugasKuliah(String judul, Integer prioritas, Date deadlinePengumpulan, String namaMataKuliah) {
         super(judul, prioritas);
         this.namaMataKuliah = namaMataKuliah;
-        this.deadlinePengumpulan = Alat.konversiKeTanggal(deadlinePengumpulan);
+        this.deadlinePengumpulan = deadlinePengumpulan;
+    }
+
+    public void setNamaMataKuliah(String namaMataKuliah) {
+        this.namaMataKuliah = namaMataKuliah;
     }
 
     public String getNamaMataKuliah() {
         return namaMataKuliah;
+    }
+
+    public void setDeadlinePengumpulan(Date deadlinePengumpulan) {
+        this.deadlinePengumpulan = deadlinePengumpulan;
     }
 
     public Date getDeadlinePengumpulan() {
@@ -24,6 +31,10 @@ public class TugasKuliah extends Kegiatan {
 
     @Override
     public void tampilkanKegiatan() {
-        System.out.println((isSelesai() ? "[✓]" : "[ ]") + " " + getJudul() + " (Prioritas: " + getPrioritas() + ")" + "(Nama Mata Kuliah: "+ this.namaMataKuliah + ")" + "(Deadline Pengumpulan: " + this.deadlinePengumpulan+") ");
+        SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy");
+        String getDeadlineFormatted = sdf.format(deadlinePengumpulan);
+
+        System.out.println((isSelesai() ? "[✓]" : "[ ]") + " " + getJudul() + " (Prioritas: " + getPrioritas() + ")"
+                + "(Deadline Pengumpulan: " + getDeadlineFormatted + ")"+ " (Nama Mata Kuliah: " + this.namaMataKuliah + ")");
     }
 }

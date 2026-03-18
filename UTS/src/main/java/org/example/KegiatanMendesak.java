@@ -1,4 +1,4 @@
-package JenisKegiatan;
+package org.example;
 
 public class KegiatanMendesak extends Kegiatan {
 

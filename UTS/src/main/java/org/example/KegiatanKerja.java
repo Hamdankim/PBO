@@ -1,4 +1,4 @@
-package JenisKegiatan;
+package org.example;
 
 public class KegiatanKerja extends Kegiatan{
     private String namaPemberiTugas;
@@ -12,8 +12,12 @@ public class KegiatanKerja extends Kegiatan{
         return namaPemberiTugas;
     }
 
+    public void setNamaPemberiTugas(String namaPemberiTugas) {
+        this.namaPemberiTugas = namaPemberiTugas;
+    }
+
     @Override
     public void tampilkanKegiatan() {
-        System.out.println((isSelesai() ? "[✓]" : "[ ]") + " " + getJudul() + " (Prioritas: " + getPrioritas() + ") " + "(Nama Pemberi Tugas: " + this.namaPemberiTugas + ") ");
+        System.out.println((isSelesai() ? "[✓]" : "[ ]") + " " + getJudul() + " (Prioritas: " + getPrioritas() + ") " + "(Nama Pemberi Tugas: " + this.namaPemberiTugas + ")");
     }
 }

@@ -1,0 +1,44 @@
+/* Menata TextField untuk input */
+.input {
+    -fx-padding: 10;
+    -fx-font-size: 14px;
+    -fx-border-color: #cfcfcf;
+    -fx-border-width: 2px;
+    -fx-background-color: grey;
+    -fx-border-radius: 5;
+    -fx-focus-color: #0077cc;
+    -fx-text-fill: white;
+    -fx-margin-bottom: 10px;
+}
+
+/* Menata TextField untuk hasil */
+.hasil {
+    -fx-padding: 10;
+    -fx-font-size: 14px;
+    -fx-border-color: #cfcfcf;
+    -fx-border-width: 2px;
+    -fx-background-color: #e9e9e9;
+    -fx-border-radius: 5;
+    -fx-text-fill: #333;
+    -fx-focus-color: transparent;
+    -fx-opacity: 0.8;
+    -fx-font-weight: bold;
+}
+
+/* Menata Button */
+.button {
+    -fx-padding: 10 20;
+    -fx-font-size: 12px;
+    -fx-background-color: #0077cc;
+    -fx-text-fill: white;
+    -fx-background-radius: 5;
+    -fx-border-color: transparent;
+}
+
+.button:hover {
+    -fx-background-color: #005fa3;
+}
+
+.button:pressed {
+    -fx-background-color: #003f7a;
+}
